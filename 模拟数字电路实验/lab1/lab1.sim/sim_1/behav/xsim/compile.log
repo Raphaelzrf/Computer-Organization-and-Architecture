@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normal code0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normalcode0
+INFO: [VRFC 10-2458] undeclared symbol w, assumed default net type wire [D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normal code0.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normaldecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normaldecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritydecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prioritydecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum_1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum_1_tb

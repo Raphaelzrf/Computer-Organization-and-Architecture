@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 22 23:06:58 2021
+# Process ID: 18160
+# Current directory: D:/moshushiyan/lab5_1/DIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4100 D:\moshushiyan\lab5_1\DIO\DIO.xpr
+# Log file: D:/moshushiyan/lab5_1/DIO/vivado.log
+# Journal file: D:/moshushiyan/lab5_1/DIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/moshushiyan/lab5_1/DIO/DIO.xpr
+INFO: [Project 1-313] Project file moved from 'Y:/Programs/vivado_project/DIO' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 21 20:19:54 2021
+# Process ID: 3808
+# Current directory: F:/桌面文件/我的文件夹/模拟与数字电路/DIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23004 F:\桌面文件\我的文件夹\模拟与数字电路\DIO\DIO.xpr
+# Log file: F:/桌面文件/我的文件夹/模拟与数字电路/DIO/vivado.log
+# Journal file: F:/桌面文件/我的文件夹/模拟与数字电路/DIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/桌面文件/我的文件夹/模拟与数字电路/DIO/DIO.xpr
+update_compile_order -fileset sources_1

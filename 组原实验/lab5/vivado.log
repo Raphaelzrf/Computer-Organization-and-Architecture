@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun 10 17:46:11 2022
+# Process ID: 11904
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12352 F:\jisuanjizuchengyuanli\vivado2.2\lab5\lab5.xpr
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab5/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/vivado2.2/lab5/lab5.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/jisuanjizuchengyuanli/vivado2.2/lab5/lab5.srcs/constrs_1/new/Pdu_cpu.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 716.570 ; gain = 101.316
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 10 18:56:20 2022...

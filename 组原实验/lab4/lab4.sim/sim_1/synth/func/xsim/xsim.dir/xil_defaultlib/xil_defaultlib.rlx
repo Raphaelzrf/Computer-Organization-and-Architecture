@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.sim/sim_1/synth/func/xsim/cpu_tb_func_synth.v,1649506342,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sim_1/new/cpu_tb.v,,RF;alu;cpu;data_memory;data_memory_dist_mem_gen_v8_0_13;data_memory_dist_mem_gen_v8_0_13_synth;data_memory_dpram;glbl;instruction_memory;instruction_memory_dist_mem_gen_v8_0_13;instruction_memory_dist_mem_gen_v8_0_13_synth;instruction_memory_rom;pc,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sim_1/new/cpu_tb.v,1649506337,verilog,,,,cpu_tb,,,,,,,,

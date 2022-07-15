@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sim_1/new/cpu_tb.v,1649506337,verilog,,,,cpu_tb,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/ip/data_memory/sim/data_memory.v,1649487713,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/ip/instruction_memory/sim/instruction_memory.v,,data_memory,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/ip/instruction_memory/sim/instruction_memory.v,1649901741,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/RF.v,,instruction_memory,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/RF.v,1649508454,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/alu.v,,RF,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/alu.v,1649334179,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/alu_control.v,,alu,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/alu_control.v,1649509169,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/control.v,,alu_control,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/control.v,1650675466,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/cpu.v,,control,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/cpu.v,1649901467,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/imm_gen_control.v,,cpu,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/imm_gen_control.v,1649468155,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/mux_2_32.v,,imm_gen_control,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/mux_2_32.v,1649345127,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/mux_4_32.v,,mux_2_32,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/mux_4_32.v,1649464930,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/pc.v,,mux_4_32,,,,,,,,
+F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sources_1/new/pc.v,1649486730,verilog,,F:/jisuanjizuchengyuanli/vivado2.2/lab4/lab4.srcs/sim_1/new/cpu_tb.v,,pc,,,,,,,,

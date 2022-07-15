@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 17 09:23:12 2022
+# Process ID: 12224
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.runs/impl_1
+# Command line: vivado.exe -log fls.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fls.tcl -notrace
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.runs/impl_1/fls.vdi
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source fls.tcl -notrace

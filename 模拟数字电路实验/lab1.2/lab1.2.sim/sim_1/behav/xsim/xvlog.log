@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/normalcode1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normalcode1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prioritycode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prioritydecode2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/sum3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/moshushiyan/lab1.2/lab1.2.srcs/sim_1/new/sum3_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum3_tb

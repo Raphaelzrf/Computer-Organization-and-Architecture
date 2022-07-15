@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 22 08:38:12 2022
+# Process ID: 20616
+# Current directory: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1452 F:\jisuanjizuchengyuanli\study\Analog_and_digital_circuit_experiment_improvement_class\lab7_1\lab7(1).xpr
+# Log file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1/lab7.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1'
+INFO: [Project 1-313] Project file moved from 'D:/moshushiyan/lab7_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP 'clk_wiz_0' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP 'blk_mem_gen_0' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+WARNING: [IP_Flow 19-2162] IP 'rom2' is locked:
+* IP 'rom2' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+WARNING: [IP_Flow 19-2162] IP 'rom3' is locked:
+* IP 'rom3' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+WARNING: [IP_Flow 19-2162] IP 'rom4' is locked:
+* IP 'rom4' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+WARNING: [IP_Flow 19-2162] IP 'rom5' is locked:
+* IP 'rom5' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 758.820 ; gain = 116.535
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1/lab7.runs/impl_1/project_all.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab7_1/lab7.runs/impl_1/project_all.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6ED46A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 22 15:49:12 2022...

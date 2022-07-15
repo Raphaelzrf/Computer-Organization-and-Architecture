@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 15 09:36:34 2022
+# Process ID: 18980
+# Current directory: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10208 F:\jisuanjizuchengyuanli\study\Analog_and_digital_circuit_experiment_improvement_class\lab6_2\labh6\labh6.xpr
+# Log file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6/labh6.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6/labh6.runs/impl_1/Print.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/lab6_2/labh6/labh6.runs/impl_1/Print.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

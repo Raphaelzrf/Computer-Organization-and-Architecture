@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 28 18:53:16 2022
+# Process ID: 13384
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/ftgu/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12492 F:\jisuanjizuchengyuanli\vivado2.2\lab5！！2\ftgu\lab5\lab5.xpr
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/ftgu/lab5/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/ftgu/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/ftgu/lab5/lab5.xpr
+INFO: [Project 1-313] Project file moved from 'Y:/Programs/cod_projects/lab5' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/sort_code_v7.coe', nor could it be found using path 'Y:/Programs/sort_code_v7.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/test.coe', nor could it be found using path 'Y:/Programs/test.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/testis.coe', nor could it be found using path 'Y:/Programs/testis.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 20:45:18 2022...

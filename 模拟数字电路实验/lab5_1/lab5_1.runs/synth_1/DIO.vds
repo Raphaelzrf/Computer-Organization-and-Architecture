@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 23 08:09:01 2021
+# Process ID: 23400
+# Current directory: D:/moshushiyan/lab5_1/lab5_1.runs/synth_1
+# Command line: vivado.exe -log DIO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DIO.tcl
+# Log file: D:/moshushiyan/lab5_1/lab5_1.runs/synth_1/DIO.vds
+# Journal file: D:/moshushiyan/lab5_1/lab5_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DIO.tcl -notrace
+Command: synth_design -top DIO -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23808 
+WARNING: [Synth 8-2490] overwriting previous definition of module FD [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/FD.v:21]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 694.438 ; gain = 183.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DIO' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DIO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'DIS' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DIS.v:21]
+INFO: [Synth 8-6157] synthesizing module 'FD' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/FD.v:21]
+	Parameter N bound to: 5000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (1#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/FD.v:21]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/counter.v:22]
+	Parameter W bound to: 3 - type: integer 
+	Parameter RST_VLU bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'decode2' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode2.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'decode2' (3#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode2.v:31]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/mux_4_1.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1' (4#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/mux_4_1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'decode7' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decode7' (5#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DIS' (6#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DIS.v:21]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/RF.v:23]
+	Parameter AW bound to: 5 - type: integer 
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RF' (7#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/ECD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (8#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/ECD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (9#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DR' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DR' (10#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AR' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/AR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AR' (11#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/AR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DB16' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DB16.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter20' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/counter20.v:23]
+	Parameter W bound to: 20 - type: integer 
+	Parameter RST_VLU bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter20' (12#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/counter20.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DB16' (13#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DB16.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PS16' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/PS16.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PS16' (14#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/PS16.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DB' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DB' (15#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PS' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/PS.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PS' (16#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/PS.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DIO' (17#1) [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/DIO.v:21]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[23]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[22]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[21]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[20]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[19]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[18]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[17]
+WARNING: [Synth 8-3331] design mux_4_1 has unconnected port d[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 733.137 ; gain = 221.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 733.137 ; gain = 221.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 733.137 ; gain = 221.738
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/moshushiyan/lab5_1/lab5_1.srcs/constrs_1/new/DIOS.xdc]
+Finished Parsing XDC File [D:/moshushiyan/lab5_1/lab5_1.srcs/constrs_1/new/DIOS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/moshushiyan/lab5_1/lab5_1.srcs/constrs_1/new/DIOS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DIO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DIO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 874.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 874.766 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 874.766 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 874.766 ; gain = 363.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "c" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'FSM'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/AR.v:36]
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'DB16'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'DB'
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [D:/moshushiyan/lab5_1/lab5_1.srcs/sources_1/new/decode2.v:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                          0000001 |                              000
+                 iSTATE0 |                          0000010 |                              001
+                 iSTATE4 |                          0000100 |                              010
+                 iSTATE1 |                          0001000 |                              011
+                 iSTATE2 |                          0010000 |                              100
+                 iSTATE3 |                          0100000 |                              101
+                 iSTATE5 |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'DB16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'DB'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 874.766 ; gain = 363.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 25    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FD__mod 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module decode2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module ECD 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      7 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module DR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module AR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DB16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module PS16 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+Module DB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+Module PS 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "e1/c" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP p1/p, operation Mode is: A*B.
+DSP Report: operator p1/p is absorbed into DSP p1/p.
+INFO: [Synth 8-3886] merging instance 'nolabel_line42/d21/an_reg[4]' (LD) to 'nolabel_line42/d21/an_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\nolabel_line42/d21/an_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (nolabel_line42/d21/an_reg[5]) is unused and will be removed from module DIO.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 874.766 ; gain = 363.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------+-----------+----------------------+-----------------+
+|DIO         | nolabel_line43/rf_reg | Implied   | 32 x 16              | RAM32X1S x 16   | 
++------------+-----------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PS16        | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 895.746 ; gain = 384.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 933.973 ; gain = 422.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------+-----------+----------------------+-----------------+
+|DIO         | nolabel_line43/rf_reg | Implied   | 32 x 16              | RAM32X1S x 16   | 
++------------+-----------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 937.031 ; gain = 425.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    28|
+|3     |DSP48E1  |     1|
+|4     |LUT1     |    20|
+|5     |LUT2     |    95|
+|6     |LUT3     |    23|
+|7     |LUT4     |    45|
+|8     |LUT5     |    63|
+|9     |LUT6     |    36|
+|10    |RAM32X1S |    16|
+|11    |FDCE     |    32|
+|12    |FDRE     |   153|
+|13    |FDSE     |     1|
+|14    |LD       |     6|
+|15    |IBUF     |    21|
+|16    |OBUF     |    15|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+------------+------+
+|      |Instance         |Module      |Cells |
++------+-----------------+------------+------+
+|1     |top              |            |   556|
+|2     |  aa             |AR          |    10|
+|3     |  d11            |DB16        |    78|
+|4     |    c2           |counter20_6 |    53|
+|5     |  d22            |DB          |    58|
+|6     |    c2           |counter20_5 |    53|
+|7     |  d3             |DB_0        |    58|
+|8     |    c2           |counter20_4 |    53|
+|9     |  d4             |DB_1        |    58|
+|10    |    c2           |counter20   |    53|
+|11    |  dd             |DR          |    19|
+|12    |  f1             |FSM         |    31|
+|13    |  nolabel_line42 |DIS         |   114|
+|14    |    c1           |counter     |    26|
+|15    |    d21          |decode2     |     6|
+|16    |    f1           |FD__mod     |    82|
+|17    |  nolabel_line43 |RF          |    16|
+|18    |  p1             |PS16        |    73|
+|19    |  p2             |PS          |     1|
+|20    |  p3             |PS_2        |     1|
+|21    |  p4             |PS_3        |     1|
++------+-----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 942.832 ; gain = 431.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 942.832 ; gain = 289.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 942.832 ; gain = 431.434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 942.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LD => LDCE: 6 instances
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 942.832 ; gain = 662.551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 942.832 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/moshushiyan/lab5_1/lab5_1.runs/synth_1/DIO.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DIO_utilization_synth.rpt -pb DIO_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 23 08:09:35 2021...

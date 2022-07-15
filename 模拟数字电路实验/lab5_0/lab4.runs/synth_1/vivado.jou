@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 21 21:20:56 2021
+# Process ID: 22360
+# Current directory: D:/moshushiyan/lab5_0/lab4.runs/synth_1
+# Command line: vivado.exe -log DIS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DIS.tcl
+# Log file: D:/moshushiyan/lab5_0/lab4.runs/synth_1/DIS.vds
+# Journal file: D:/moshushiyan/lab5_0/lab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DIS.tcl -notrace

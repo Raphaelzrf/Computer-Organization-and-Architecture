@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 28 18:29:46 2022
+# Process ID: 2032
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15112 F:\jisuanjizuchengyuanli\vivado2.2\lab5！！2\lab5\lab5.xpr
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/lab5/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/vivado2.2/lab5！！2/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {D:/rars/zuyuan/lab5/hazards_test.coe}] [get_ips instrcution_memory]
+reset_run synth_1
+reset_run instrcution_memory_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

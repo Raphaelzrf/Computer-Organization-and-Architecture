@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/moshushiyan/lab1.2/lab1.2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/moshushiyan/lab1.2/lab1.2.srcs/sim_1/new/sum3_tb.v,1635338910,verilog,,,,sum3_tb,,,,,,,,
+D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/normalcode1.v,1635047905,verilog,,D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode.v,,normalcode1,,,,,,,,
+D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode.v,1635044626,verilog,,D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode2.v,,prioritycode,,,,,,,,
+D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/prioritycode2.v,1635047903,verilog,,D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/sum3.v,,prioritydecode2,,,,,,,,
+D:/moshushiyan/lab1.2/lab1.2.srcs/sources_1/new/sum3.v,1635338876,verilog,,D:/moshushiyan/lab1.2/lab1.2.srcs/sim_1/new/sum3_tb.v,,sum3,,,,,,,,

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 21 19:39:52 2021
+# Process ID: 12644
+# Current directory: D:/moshushiyan/lab5_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1196 D:\moshushiyan\lab5_1\lab5_1.xpr
+# Log file: D:/moshushiyan/lab5_1/vivado.log
+# Journal file: D:/moshushiyan/lab5_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/moshushiyan/lab5_1/lab5_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/moshushiyan/lab4_3/lab5_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 726.934 ; gain = 74.270
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Nov 21 22:03:12 2021] Launched synth_1...
+Run output will be captured here: D:/moshushiyan/lab5_1/lab5_1.runs/synth_1/runme.log
+[Sun Nov 21 22:03:12 2021] Launched impl_1...
+Run output will be captured here: D:/moshushiyan/lab5_1/lab5_1.runs/impl_1/runme.log

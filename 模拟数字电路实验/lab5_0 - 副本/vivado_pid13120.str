@@ -1,0 +1,502 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 13120
+License: Customer
+
+Current time: 	Sun Nov 21 20:17:28 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 38 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zhh
+User home directory: C:/Users/zhh
+User working directory: D:/moshushiyan/lab5_0
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.1
+RDI_DATADIR: D:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/moshushiyan/lab5_0/vivado.log
+Vivado journal file location: 	D:/moshushiyan/lab5_0/vivado.jou
+Engine tmp dir: 	D:/moshushiyan/lab5_0/.Xil/Vivado-13120-DESKTOP-LEJH40V
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 655 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\moshushiyan\lab5_0\lab4.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/moshushiyan/lab5_0/lab4.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 111 MB (+113671kb) [00:00:13]
+// [Engine Memory]: 610 MB (+488376kb) [00:00:13]
+// [Engine Memory]: 642 MB (+982kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  4339 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 53 MB. Current time: 11/21/21, 8:17:29 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 685.539 ; gain = 68.500 
+// Project name: lab4; location: D:/moshushiyan/lab5_0; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 680 MB (+6799kb) [00:00:27]
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 21 20:17:41 2021] Launched impl_1... Run output will be captured here: D:/moshushiyan/lab5_0/lab4.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 719 MB (+5038kb) [00:00:39]
+// TclEventType: RUN_STEP_COMPLETED
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Nov 21 20:18:27 CST 2021
+# Process ID (PID): 13120
+# OS: Windows 10
+# User: zhh
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.COutOfMemoryException: Out of memory (See D:/moshushiyan/lab5_0/vivado_pid13120.debug)
+*/
+/*
+===================================================================================
+Engine Out of Memory!
+===================================================================================
+*/
+/*
+=========================================================================================
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 13120
+License: Customer
+
+Current time: 	Sun Nov 21 20:18:27 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 38 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zhh
+User home directory: C:/Users/zhh
+User working directory: D:/moshushiyan/lab5_0
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.1
+RDI_DATADIR: D:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/moshushiyan/lab5_0/vivado.log
+Vivado journal file location: 	D:/moshushiyan/lab5_0/vivado.jou
+Engine tmp dir: 	D:/moshushiyan/lab5_0/.Xil/Vivado-13120-DESKTOP-LEJH40V
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	191 MB
+GUI allocated memory percent used: 2.07%
+GUI peak memory used: 115 MB
+GUI total free memory:	3,008 MB
+GUI threads:	
+	"Attach Listener":RUNNABLE
+	"AWT-EventQueue-1" in group "main":RUNNABLE
+	"AWT-Shutdown":WAITING
+	"AWT-Windows":RUNNABLE
+	"Batik CleanerThread" in group "main":WAITING
+	"Common-Cleaner" in group "InnocuousThreadGroup":TIMED_WAITING
+	"Finalizer":WAITING
+	"HCindyUtils: Backup All Debug Files" in group "main":TIMED_WAITING
+	"hw_ila_monitor" in group "main":WAITING
+	"Image Animator 0" in group "main":TIMED_WAITING
+	"Image Animator 0" in group "main":TIMED_WAITING
+	"Java2D Disposer":WAITING
+	"main" in group "main":TIMED_WAITING
+	"Monitor HEventQueue" in group "main":TIMED_WAITING
+	"Process Messages" in group "main":TIMED_WAITING
+	"Reference Handler":RUNNABLE
+	"Refresh Filesets Swing Worker" in group "main":TIMED_WAITING
+	"Signal Dispatcher":RUNNABLE
+	"SyntheticaAnimation 25" in group "main":TIMED_WAITING
+	"SyntheticaAnimation 50" in group "main":TIMED_WAITING
+	"SyntheticaAnimation 70" in group "main":TIMED_WAITING
+	"SyntheticaCleanerThread" in group "main":TIMED_WAITING
+	"Thread-1" in group "main":RUNNABLE
+	"TimerQueue":TIMED_WAITING
+	"Update Runs Swing Worker" in group "main":TIMED_WAITING
+GUI max memory:		3,072 MB
+Engine allocated memory: 719 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+The amount of used memory by Vivado GUI: 63 MB
+The % of memory used by Vivado GUI: 2.07%
+The amount of available memory (free memory plus never allocated memory): 3,008 MB
+The % of available memory (free memory plus never allocated memory): 97.93%
+Maximum (-Xmx) amount of memory that the JVM will attempt to use: 3,072 MB
+
+Engine heap size: 719 MB
+
+Current thread count: 25
+Peak thread count: 28
+
+Threads:
+---------------
+	HCindyUtils: Backup All Debug Files (TIMED_WAITING)
+	Image Animator 0 (TIMED_WAITING)
+	Image Animator 0 (TIMED_WAITING)
+	Update Runs Swing Worker (TIMED_WAITING)
+	hw_ila_monitor (WAITING)
+	Refresh Filesets Swing Worker (TIMED_WAITING)
+	SyntheticaAnimation 70 (TIMED_WAITING)
+	SyntheticaAnimation 25 (TIMED_WAITING)
+	SyntheticaAnimation 50 (TIMED_WAITING)
+	Monitor HEventQueue (TIMED_WAITING)
+	SyntheticaCleanerThread (TIMED_WAITING)
+	Batik CleanerThread (WAITING)
+	AWT-EventQueue-1 (RUNNABLE)
+	AWT-Shutdown (WAITING)
+	Process Messages (TIMED_WAITING)
+	Thread-1 (RUNNABLE)
+	TimerQueue (TIMED_WAITING)
+	AWT-Windows (RUNNABLE)
+	Java2D Disposer (WAITING)
+	Common-Cleaner (TIMED_WAITING)
+	Attach Listener (RUNNABLE)
+	Signal Dispatcher (RUNNABLE)
+	Finalizer (WAITING)
+	Reference Handler (RUNNABLE)
+	main (TIMED_WAITING)
+
+Swing Workers:
+---------------
+	Process Messages (TIMED_WAITING)
+	Monitor HEventQueue (TIMED_WAITING)
+	Refresh Filesets Swing Worker (TIMED_WAITING)
+	Update Runs Swing Worker (TIMED_WAITING)
+	ui.views.x.b.aD@204639d6
+
+
+
+Peak 'codeheap 'non-nmethods'' memory used: 1 MB
+Peak 'codeheap 'non-nmethods'' memory reserved: 2 MB
+Peak 'metaspace' memory used: 69 MB
+Peak 'metaspace' memory reserved: 73 MB
+Peak 'codeheap 'profiled nmethods'' memory used: 32 MB
+Peak 'codeheap 'profiled nmethods'' memory reserved: 32 MB
+Peak 'compressed class space' memory used: 9 MB
+Peak 'compressed class space' memory reserved: 10 MB
+Peak 'g1 eden space' memory used: 60 MB
+Peak 'g1 eden space' memory reserved: 63 MB
+Peak 'g1 old gen' memory used: 62 MB
+Peak 'g1 old gen' memory reserved: 128 MB
+Peak 'g1 survivor space' memory used: 8 MB
+Peak 'g1 survivor space' memory reserved: 8 MB
+Peak 'codeheap 'non-profiled nmethods'' memory used: 10 MB
+Peak 'codeheap 'non-profiled nmethods'' memory reserved: 10 MB
+=========================================================================================
+
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Nov 21 20:18:28 CST 2021
+# Process ID (PID): 13120
+# OS: Windows 10
+# User: zhh
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.COutOfMemoryException: Out of memory (See D:/moshushiyan/lab5_0/vivado_pid13120.debug)
+*/
+/*
+===================================================================================
+Engine Out of Memory!
+===================================================================================
+*/
+/*
+=========================================================================================
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 13120
+License: Customer
+
+Current time: 	Sun Nov 21 20:18:28 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 38 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zhh
+User home directory: C:/Users/zhh
+User working directory: D:/moshushiyan/lab5_0
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.1
+RDI_DATADIR: D:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/zhh/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/moshushiyan/lab5_0/vivado.log
+Vivado journal file location: 	D:/moshushiyan/lab5_0/vivado.jou
+Engine tmp dir: 	D:/moshushiyan/lab5_0/.Xil/Vivado-13120-DESKTOP-LEJH40V
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	191 MB
+GUI allocated memory percent used: 2.32%
+GUI peak memory used: 115 MB
+GUI total free memory:	3,000 MB
+GUI threads:	
+	"Attach Listener":RUNNABLE
+	"AWT-EventQueue-1" in group "main":RUNNABLE
+	"AWT-Shutdown":WAITING
+	"AWT-Windows":RUNNABLE
+	"Batik CleanerThread" in group "main":WAITING
+	"Common-Cleaner" in group "InnocuousThreadGroup":TIMED_WAITING
+	"Finalizer":WAITING
+	"HCindyUtils: Backup All Debug Files" in group "main":TIMED_WAITING
+	"hw_ila_monitor" in group "main":WAITING
+	"Image Animator 0" in group "main":TIMED_WAITING
+	"Image Animator 0" in group "main":TIMED_WAITING
+	"Image Fetcher 0" in group "main":TIMED_WAITING
+	"Java2D Disposer":WAITING
+	"main" in group "main":TIMED_WAITING
+	"Monitor HEventQueue" in group "main":TIMED_WAITING
+	"Process Messages" in group "main":TIMED_WAITING
+	"Reference Handler":RUNNABLE
+	"Refresh Filesets Swing Worker" in group "main":TIMED_WAITING
+	"Signal Dispatcher":RUNNABLE
+	"SyntheticaAnimation 25" in group "main":TIMED_WAITING
+	"SyntheticaAnimation 50" in group "main":TIMED_WAITING
+	"SyntheticaAnimation 70" in group "main":TIMED_WAITING
+	"SyntheticaCleanerThread" in group "main":TIMED_WAITING
+	"Thread-1" in group "main":RUNNABLE
+	"TimerQueue":TIMED_WAITING
+	"Update Runs Swing Worker" in group "main":TIMED_WAITING
+GUI max memory:		3,072 MB
+Engine allocated memory: 719 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+The amount of used memory by Vivado GUI: 71 MB
+The % of memory used by Vivado GUI: 2.32%
+The amount of available memory (free memory plus never allocated memory): 3,000 MB
+The % of available memory (free memory plus never allocated memory): 97.68%
+Maximum (-Xmx) amount of memory that the JVM will attempt to use: 3,072 MB
+
+Engine heap size: 719 MB
+
+Current thread count: 26
+Peak thread count: 28
+
+Threads:
+---------------
+	Image Fetcher 0 (TIMED_WAITING)
+	HCindyUtils: Backup All Debug Files (TIMED_WAITING)
+	Image Animator 0 (TIMED_WAITING)
+	Image Animator 0 (TIMED_WAITING)
+	Update Runs Swing Worker (TIMED_WAITING)
+	hw_ila_monitor (WAITING)
+	Refresh Filesets Swing Worker (TIMED_WAITING)
+	SyntheticaAnimation 70 (TIMED_WAITING)
+	SyntheticaAnimation 25 (TIMED_WAITING)
+	SyntheticaAnimation 50 (TIMED_WAITING)
+	Monitor HEventQueue (TIMED_WAITING)
+	SyntheticaCleanerThread (TIMED_WAITING)
+	Batik CleanerThread (WAITING)
+	AWT-EventQueue-1 (RUNNABLE)
+	AWT-Shutdown (WAITING)
+	Process Messages (TIMED_WAITING)
+	Thread-1 (RUNNABLE)
+	TimerQueue (TIMED_WAITING)
+	AWT-Windows (RUNNABLE)
+	Java2D Disposer (WAITING)
+	Common-Cleaner (TIMED_WAITING)
+	Attach Listener (RUNNABLE)
+	Signal Dispatcher (RUNNABLE)
+	Finalizer (WAITING)
+	Reference Handler (RUNNABLE)
+	main (TIMED_WAITING)
+
+Swing Workers:
+---------------
+	Process Messages (TIMED_WAITING)
+	Monitor HEventQueue (TIMED_WAITING)
+	Refresh Filesets Swing Worker (TIMED_WAITING)
+	Update Runs Swing Worker (TIMED_WAITING)
+	ui.views.x.b.aD@3112478
+
+
+
+Peak 'codeheap 'non-nmethods'' memory used: 1 MB
+Peak 'codeheap 'non-nmethods'' memory reserved: 2 MB
+Peak 'metaspace' memory used: 69 MB
+Peak 'metaspace' memory reserved: 73 MB
+Peak 'codeheap 'profiled nmethods'' memory used: 32 MB
+Peak 'codeheap 'profiled nmethods'' memory reserved: 32 MB
+Peak 'compressed class space' memory used: 9 MB
+Peak 'compressed class space' memory reserved: 10 MB
+Peak 'g1 eden space' memory used: 60 MB
+Peak 'g1 eden space' memory reserved: 63 MB
+Peak 'g1 old gen' memory used: 62 MB
+Peak 'g1 old gen' memory reserved: 128 MB
+Peak 'g1 survivor space' memory used: 8 MB
+Peak 'g1 survivor space' memory reserved: 8 MB
+Peak 'codeheap 'non-profiled nmethods'' memory used: 10 MB
+Peak 'codeheap 'non-profiled nmethods'' memory reserved: 10 MB
+=========================================================================================
+
+*/

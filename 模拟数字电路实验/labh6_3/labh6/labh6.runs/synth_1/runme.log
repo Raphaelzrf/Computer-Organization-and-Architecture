@@ -1,0 +1,469 @@
+
+*** Running vivado
+    with args -log Print.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Print.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Print.tcl -notrace
+Command: synth_design -top Print -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 701.066 ; gain = 177.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Print' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PNT_1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DB' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/DB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DB' (1#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/DB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDG' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/FDG.v:22]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FDG' (2#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/FDG.v:22]
+INFO: [Synth 8-6157] synthesizing module 'PS' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trigger' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/trigger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'trigger' (3#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/trigger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PS' (4#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DIS' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/DIS.v:22]
+INFO: [Synth 8-6157] synthesizing module 'fpq' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/fqp.v:23]
+	Parameter N bound to: 8000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fpq' (5#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/fqp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/counter.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (6#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/counter.v:25]
+INFO: [Synth 8-6157] synthesizing module 'decodercnt' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/decodercnt.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'decodercnt' (7#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/decodercnt.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (8#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/mux.v:22]
+INFO: [Synth 8-6157] synthesizing module 'decoder7' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/decoder7.v:23]
+INFO: [Synth 8-226] default block is never used [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/decoder7.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'decoder7' (9#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/decoder7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DIS' (10#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/DIS.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk50' [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/clk50_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk50' (11#1) [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/clk50_stub.v:5]
+WARNING: [Synth 8-7023] instance 'c1' of module 'clk50' has 4 connections declared, but only 3 given [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PNT_1.v:72]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (12#1) [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PCU' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PCU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCU' (13#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PCU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VRAM' [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VRAM' (14#1) [D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/.Xil/Vivado-14468-DESKTOP-LEJH40V/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SRA' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/SRA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SRA' (15#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/SRA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VDT' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/VDT.v:23]
+	Parameter H_CNT bound to: 11'b10000001111 
+	Parameter V_CNT bound to: 11'b01010011001 
+INFO: [Synth 8-6155] done synthesizing module 'VDT' (16#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/VDT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Print' (17#1) [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PNT_1.v:22]
+WARNING: [Synth 8-3331] design PCU has unconnected port dir[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 768.273 ; gain = 244.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 768.273 ; gain = 244.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 768.273 ; gain = 244.406
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/VRAM_1/VRAM/VRAM_in_context.xdc] for cell 'v1'
+Finished Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/VRAM_1/VRAM/VRAM_in_context.xdc] for cell 'v1'
+Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/clk50/clk50/clk50_in_context.xdc] for cell 'c1'
+Finished Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/clk50/clk50/clk50_in_context.xdc] for cell 'c1'
+Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'r1'
+Finished Parsing XDC File [d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/ROM/ROM/ROM_in_context.xdc] for cell 'r1'
+Parsing XDC File [D:/moshushiyan/labh6_3/labh6/labh6.srcs/constrs_1/new/PNTS.xdc]
+Finished Parsing XDC File [D:/moshushiyan/labh6_3/labh6/labh6.srcs/constrs_1/new/PNTS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/moshushiyan/labh6_3/labh6/labh6.srcs/constrs_1/new/PNTS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Print_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Print_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 896.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 896.406 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'r1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'v1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 898.430 ; gain = 374.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 898.430 ; gain = 374.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/clk50/clk50/clk50_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/ip/clk50/clk50/clk50_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for v1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for c1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for r1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 898.430 ; gain = 374.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PCU.v:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/PCU.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [D:/moshushiyan/labh6_3/labh6/labh6.srcs/sources_1/new/DB.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 898.430 ; gain = 374.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 3     
+	   6 Input     12 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module FDG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module trigger 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module decodercnt 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module PCU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module SRA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
++---Muxes : 
+	   6 Input     12 Bit        Muxes := 1     
+Module VDT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP s1/raddr, operation Mode is: C+A*(B:0xc8).
+DSP Report: operator s1/raddr is absorbed into DSP s1/raddr.
+DSP Report: operator s1/raddr0 is absorbed into DSP s1/raddr.
+WARNING: [Synth 8-3917] design Print has port a[7] driven by constant 1
+WARNING: [Synth 8-3917] design Print has port a[6] driven by constant 1
+WARNING: [Synth 8-3917] design Print has port a[5] driven by constant 1
+WARNING: [Synth 8-3917] design Print has port a[4] driven by constant 1
+WARNING: [Synth 8-3917] design Print has port a[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 898.430 ; gain = 374.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SRA         | C+A*(B:0xc8) | 12     | 8      | 12     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'c1/clk_out1' to pin 'c1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 908.469 ; gain = 384.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 947.020 ; gain = 423.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 955.414 ; gain = 431.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk50         |         1|
+|2     |ROM           |         1|
+|3     |VRAM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ROM     |     1|
+|2     |VRAM    |     1|
+|3     |clk50   |     1|
+|4     |CARRY4  |   152|
+|5     |DSP48E1 |     1|
+|6     |LUT1    |   144|
+|7     |LUT2    |   299|
+|8     |LUT3    |    39|
+|9     |LUT4    |    77|
+|10    |LUT5    |    58|
+|11    |LUT6    |   216|
+|12    |FDRE    |   420|
+|13    |FDSE    |    37|
+|14    |LDP     |     4|
+|15    |IBUF    |    19|
+|16    |OBUF    |    29|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------+------+
+|      |Instance         |Module     |Cells |
++------+-----------------+-----------+------+
+|1     |top              |           |  1521|
+|2     |  d1             |DB         |   200|
+|3     |  d2             |DB_0       |   199|
+|4     |  d3             |DB_1       |   199|
+|5     |  d4             |DB_2       |   199|
+|6     |  nolabel_line61 |FDG        |    82|
+|7     |  nolabel_line62 |FDG_3      |    82|
+|8     |  nolabel_line63 |FDG_4      |    82|
+|9     |  nolabel_line64 |FDG_5      |    82|
+|10    |  nolabel_line71 |DIS        |    39|
+|11    |    a0           |fpq        |    21|
+|12    |    a1           |counter    |    18|
+|13    |  p1             |PS         |     5|
+|14    |    a0           |trigger_17 |     1|
+|15    |    a1           |trigger_18 |     2|
+|16    |    a2           |trigger_19 |     2|
+|17    |  p2             |PS_6       |     4|
+|18    |    a0           |trigger_14 |     1|
+|19    |    a1           |trigger_15 |     2|
+|20    |    a2           |trigger_16 |     1|
+|21    |  p3             |PS_7       |     4|
+|22    |    a0           |trigger_11 |     1|
+|23    |    a1           |trigger_12 |     1|
+|24    |    a2           |trigger_13 |     2|
+|25    |  p4             |PS_8       |     3|
+|26    |    a0           |trigger    |     1|
+|27    |    a1           |trigger_9  |     1|
+|28    |    a2           |trigger_10 |     1|
+|29    |  p5             |PCU        |   105|
+|30    |  s1             |SRA        |    12|
+|31    |  v2             |VDT        |   137|
++------+-----------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 960.262 ; gain = 436.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 960.262 ; gain = 306.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 960.262 ; gain = 436.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 960.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LDP => LDPE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 960.262 ; gain = 669.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 960.262 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/moshushiyan/labh6_3/labh6/labh6.runs/synth_1/Print.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Print_utilization_synth.rpt -pb Print_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  7 21:25:01 2021...

@@ -1,0 +1,26 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ba43a1730a3b40dfb9165678de27bb79 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fls_behav xil_defaultlib.fls xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.srcs/sources_1/new/alu.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.srcs/sources_1/new/alu.v:36]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'pe' [F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.srcs/sources_1/new/DIS.v:34]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'y' [F:/jisuanjizuchengyuanli/vivado2.2/lab1_fls.srcs/sources_1/new/DIS.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.alladder
+Compiling module xil_defaultlib._6bit_adder
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.fpq
+Compiling module xil_defaultlib.counter2
+Compiling module xil_defaultlib.decodercnt
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.decoder7
+Compiling module xil_defaultlib.DIS
+Compiling module xil_defaultlib.fls
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fls_behav

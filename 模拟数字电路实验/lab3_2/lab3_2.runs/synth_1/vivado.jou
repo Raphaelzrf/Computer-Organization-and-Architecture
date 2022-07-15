@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 10 20:30:07 2021
+# Process ID: 9872
+# Current directory: D:/moshushiyan/lab3_2/lab3_2.runs/synth_1
+# Command line: vivado.exe -log fls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fls.tcl
+# Log file: D:/moshushiyan/lab3_2/lab3_2.runs/synth_1/fls.vds
+# Journal file: D:/moshushiyan/lab3_2/lab3_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fls.tcl -notrace

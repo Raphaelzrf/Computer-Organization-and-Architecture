@@ -1,0 +1,33 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Nov 21 20:18:27 CST 2021
+# Process ID (PID): 13120
+# User: zhh
+# OS: Windows 10
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Sun Nov 21 20:18:27 CST 2021
+ui.frmwork.COutOfMemoryException: Out of memory
+	at ui.data.msgmgr.messagemanageri.getMessages(Native Method)
+	at ui.frmwork.d.l.a(SourceFile:57)
+	at ui.views.x.b.at.m(SourceFile:523)
+	at ui.views.x.b.at.a(SourceFile:75)
+	at ui.views.x.b.aD.construct(SourceFile:489)
+	at ui.frmwork.y.run(SourceFile:205)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+Sun Nov 21 20:18:28 CST 2021
+ui.frmwork.COutOfMemoryException: Out of memory
+	at ui.data.msgmgr.messagemanageri.getMessages(Native Method)
+	at ui.frmwork.d.l.a(SourceFile:57)
+	at ui.views.x.b.at.m(SourceFile:523)
+	at ui.views.x.b.at.a(SourceFile:75)
+	at ui.views.x.b.aD.construct(SourceFile:489)
+	at ui.frmwork.y.run(SourceFile:205)
+	at java.base/java.lang.Thread.run(Unknown Source)
+

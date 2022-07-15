@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 21 20:17:06 2021
+# Process ID: 13120
+# Current directory: D:/moshushiyan/lab5_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13044 D:\moshushiyan\lab5_0\lab4.xpr
+# Log file: D:/moshushiyan/lab5_0/vivado.log
+# Journal file: D:/moshushiyan/lab5_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/moshushiyan/lab5_0/lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 685.539 ; gain = 68.500
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Nov 21 20:17:41 2021] Launched impl_1...
+Run output will be captured here: D:/moshushiyan/lab5_0/lab4.runs/impl_1/runme.log

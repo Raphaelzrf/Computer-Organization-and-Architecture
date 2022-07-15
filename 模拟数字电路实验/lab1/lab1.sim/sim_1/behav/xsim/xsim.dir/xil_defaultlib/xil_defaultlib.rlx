@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/moshushiyan/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum2_tb.v,1635003103,verilog,,,,sum2_tb,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum_1_tb.v,1635338697,verilog,,,,sum_1_tb,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum_3_tb.v,1635043373,verilog,,,,sum_3_tb,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normal code0.v,1634999646,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normaldecode.v,,normalcode0,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normalcode1.v,1635001251,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritycode.v,,normalcode1,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/normaldecode.v,1634978989,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritydecode.v,,normaldecode,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritycode.v,1634999669,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritydecode2.v,,prioritycode,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritydecode.v,1635338520,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum1.v,,prioritydecode,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/prioritydecode2.v,1635003586,verilog,,D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum3.v,,prioritydecode2,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum1.v,1635338699,verilog,,D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum_1_tb.v,,sum1,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum2.v,1635003586,verilog,,D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum2_tb.v,,sum2,,,,,,,,
+D:/moshushiyan/lab1/lab1.srcs/sources_1/new/sum3.v,1635043152,verilog,,D:/moshushiyan/lab1/lab1.srcs/sim_1/new/sum_3_tb.v,,sum3,,,,,,,,

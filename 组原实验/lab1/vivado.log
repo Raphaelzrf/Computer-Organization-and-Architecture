@@ -1,0 +1,749 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 16 16:26:27 2022
+# Process ID: 8480
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5628 F:\jisuanjizuchengyuanli\vivado2.2\lab1\lab1.xpr
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab1/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v w ]
+add_files -fileset sim_1 F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+[Wed Mar 16 17:24:55 2022] Launched synth_1...
+Run output will be captured here: F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _6bit_adder
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'C4' is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alladder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.alladder
+Compiling module xil_defaultlib._6bit_adder
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.664 ; gain = 17.930
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 16 17:26:24 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 730.125 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 748.207 ; gain = 18.082
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 821.684 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _6bit_adder
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'C4' is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alladder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.alladder
+Compiling module xil_defaultlib._6bit_adder
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/synth_1
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _6bit_adder
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'C4' is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alladder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.alladder
+Compiling module xil_defaultlib._6bit_adder
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _6bit_adder
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'C4' is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alladder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+"xelab -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1e362cd65a7644b7b76e668c4a274d66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C_1' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:36]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.alladder
+Compiling module xil_defaultlib._6bit_adder
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+file mkdir F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1
+file mkdir F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc w ]
+add_files -fileset constrs_1 F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/DIS.xdc w ]
+add_files -fileset constrs_1 F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/DIS.xdc
+export_ip_user_files -of_objects  [get_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/DIS.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/DIS.xdc
+file delete -force F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/DIS.xdc
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decorder7.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decorder7.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decorder7.v] -no_script -reset -force -quiet
+remove_files  F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decorder7.v
+file delete -force F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decorder7.v
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder.v] -no_script -reset -force -quiet
+remove_files  F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder.v
+file delete -force F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder.v
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v] -no_script -reset -force -quiet
+remove_files  F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v
+file delete -force F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v
+update_compile_order -fileset sources_1
+close [ open F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v w ]
+add_files F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 16 18:47:04 2022] Launched synth_1...
+Run output will be captured here: F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/synth_1/runme.log
+[Wed Mar 16 18:47:04 2022] Launched impl_1...
+Run output will be captured here: F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sim_1/new/alu_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 16 18:47:59 2022] Launched synth_1...
+Run output will be captured here: F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/synth_1/runme.log
+[Wed Mar 16 18:47:59 2022] Launched impl_1...
+Run output will be captured here: F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Nexys4DDR-210292A8B5E3A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: alu_DIS
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-2611] redeclaration of ansi port C4 is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port C5 is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2764.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_DIS' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alu' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module '_6bit_adder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:22]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alladder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HalfAdder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HalfAdder' (1#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alladder' (2#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:23]
+INFO: [Synth 8-6155] done synthesizing module '_6bit_adder' (3#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (4#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DIS' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:23]
+	Parameter WIDTd bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fpq' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:22]
+	Parameter N bound to: 8000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fpq' (5#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter2' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter2' (6#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'cnt' does not match port width (2) of module 'counter2' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:35]
+INFO: [Synth 8-6157] synthesizing module 'decodercnt' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:23]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'decodercnt' (7#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (8#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder7' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:22]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'decoder7' (9#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DIS' (10#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_DIS' (11#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:23]
+WARNING: [Synth 8-3331] design mux has unconnected port y[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2764.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2764.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2764.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+Finished Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2764.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2783.328 ; gain = 18.504
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2783.328 ; gain = 18.504
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+Finished Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2783.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.runs/impl_1/alu_DIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+ERROR: [Labtools 27-2312] Device xc7a100t_0 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
+Use open_hw_target to re-register the hardware device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B5E3A
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: alu_DIS
+WARNING: [Synth 8-2611] redeclaration of ansi port C4 is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port C5 is not allowed [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:32]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3335.754 ; gain = 23.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_DIS' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alu' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module '_6bit_adder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:22]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alladder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HalfAdder' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HalfAdder' (1#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/HalfAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alladder' (2#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alladder.v:23]
+INFO: [Synth 8-6155] done synthesizing module '_6bit_adder' (3#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/_6bit_adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (4#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DIS' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:23]
+	Parameter WIDTd bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fpq' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:22]
+	Parameter N bound to: 8000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fpq' (5#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/fpq.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter2' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter2' (6#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/counter2.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'cnt' does not match port width (2) of module 'counter2' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:35]
+INFO: [Synth 8-6157] synthesizing module 'decodercnt' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:23]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'decodercnt' (7#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decodercnt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (8#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder7' [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:22]
+INFO: [Synth 8-226] default block is never used [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'decoder7' (9#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/decoder7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DIS' (10#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/DIS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_DIS' (11#1) [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/sources_1/new/alu_DIS.v:23]
+WARNING: [Synth 8-3331] design mux has unconnected port y[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3368.391 ; gain = 56.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.293 ; gain = 79.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3391.293 ; gain = 79.465
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+Finished Parsing XDC File [F:/jisuanjizuchengyuanli/vivado2.2/lab1/lab1.srcs/constrs_1/new/alu.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3510.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3976.148 ; gain = 664.320
+28 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3976.148 ; gain = 664.320
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4076.891 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 17 20:24:50 2022...

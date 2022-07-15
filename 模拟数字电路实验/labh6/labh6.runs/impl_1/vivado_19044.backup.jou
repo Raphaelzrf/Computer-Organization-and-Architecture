@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 15 09:46:10 2022
+# Process ID: 19044
+# Current directory: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/labh6/labh6.runs/impl_1
+# Command line: vivado.exe -log Print.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Print.tcl -notrace
+# Log file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/labh6/labh6.runs/impl_1/Print.vdi
+# Journal file: F:/jisuanjizuchengyuanli/study/Analog_and_digital_circuit_experiment_improvement_class/labh6/labh6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Print.tcl -notrace

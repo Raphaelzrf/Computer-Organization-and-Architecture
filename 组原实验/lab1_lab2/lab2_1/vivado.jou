@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 24 18:18:10 2022
+# Process ID: 20584
+# Current directory: F:/jisuanjizuchengyuanli/vivado2.2/lab2_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1780 F:\jisuanjizuchengyuanli\vivado2.2\lab2_1\lab2_1.xpr
+# Log file: F:/jisuanjizuchengyuanli/vivado2.2/lab2_1/vivado.log
+# Journal file: F:/jisuanjizuchengyuanli/vivado2.2/lab2_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/jisuanjizuchengyuanli/vivado2.2/lab2_1/lab2_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source RF_tb.tcl
+close_sim
